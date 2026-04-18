@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
@@ -12,24 +12,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.17",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.20.0",
+    "@types/uuid": "^10.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "mysql2": "^3.19.1",
     "node-cron": "^4.2.1",
     "openai": "^6.32.0",
     "pg": "^8.20.0",
     "socket.io": "^4.8.3",
+    "typescript": "^5.9.3",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.18",
-    "@types/express": "^5.0.6",
-    "@types/node": "^22.0.0",
-    "@types/node-cron": "^3.0.11",
-    "@types/pg": "^8.20.0",
-    "@types/uuid": "^10.0.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.3"
+    "ts-node-dev": "^2.0.0"
   }
 }
